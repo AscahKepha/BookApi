@@ -9,7 +9,7 @@ export const bookApi = createApi({
         getAllBooks: builder.query({
             query: () => 'books',
             providesTags: ['books']// used to invalidate or make a refetch
-        }),
+        }), 
         deleteBookById: builder.mutation({
             query: (bookId) => ({
                 url: `books/${bookId}`,
