@@ -1,0 +1,62 @@
+{
+  "id": "119048dd-dbe0-41ff-86a5-8d83157f539d",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.bookTable": {
+      "name": "bookTable",
+      "schema": "",
+      "columns": {
+        "bookId": {
+          "name": "bookId",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "bookTitle": {
+          "name": "bookTitle",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bookAuthor": {
+          "name": "bookAuthor",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bookYear": {
+          "name": "bookYear",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bookGenre": {
+          "name": "bookGenre",
+          "type": "varchar(50)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
